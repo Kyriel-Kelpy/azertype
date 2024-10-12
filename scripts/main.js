@@ -1,0 +1,10 @@
+// let baliseZoneSaisie = document.querySelector("#zoneSaisie")
+// let boutonValidation = document.querySelector("#boutonValidation")
+// let baliseZoneProposition = document.querySelector("#zoneProposition")
+// let baliseScore = document.querySelector(".score")
+// let inputsRadio = document.querySelectorAll(".zoneChoixRadio input")
+// let minuteurElement = document.getElementById('zoneChrono')
+// let choixNiveau = document.querySelectorAll(".zoneChoixNiveau input")
+
+lancerJeu()
+initAddEventListenerPopup()

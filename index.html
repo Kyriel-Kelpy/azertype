@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>AzerType</title>
+
+    <script src="scripts/config.js" defer></script>
+    <script src="scripts/popup.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>AzerType</h1>
+        <h2>L'application pour ecrire plus vite</h2>
+        <p>AzerType est une appplication en ligne pour apprendre a taper plus vite au clavier :)</p>
+    </header>
+    
+    <main>
+
+        <section class="gameBox">
+            <form action="">
+                <p>Choisissez un niveau de difficulté</p>
+                <div class="zoneChoixNiveau">
+                    <input type="radio" name="optionNiveau" value="1" id="facile" checked> <label for="facile">Facile</label>
+                    <input type="radio" name="optionNiveau" value="2" id="moyen"> <label for="moyen">Moyen</label>
+                    <input type="radio" name="optionNiveau" value="3" id="difficile"> <label for="difficile">Difficile</label><br>
+                </div>
+
+                <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ ci-dessous avant que le temps ne s'écoule</p>
+                <div class="zoneChoixRadio">
+                    <input type="radio" name="optionSources" value="1" id="mots" checked> <label for="mots">Mots</label>
+                    <input type="radio" name="optionSources" value="2" id="phrases"> <label for="phrases">Phrases</label><br>
+                </div>
+                
+                <div class="grid1">
+                    <div style="color: rgb(246, 142, 95); background-color: white;" class="gridA" id="zoneProposition">
+                        
+                    </div>
+                    <div style="color: red; background-color: white;" class="gridD" id="zoneChrono">
+                        ∞Temps illimité∞
+                    </div>
+            
+                    <input type="text" id="zoneSaisie" name="zoneSaisie" class="gridB">
+                    <button type="button" style="color: rgb(246, 142, 95); background-color: white; font-size: larger;" class="gridC" id="boutonValidation">Valider</button>
+                    
+                </div>
+                <p>Votre score : <span class="score" style="color: green;"></span></p>
+
+                <button type="button" style="color: rgb(246, 142, 95); background-color: white; font-size: larger;" class="zonePartage">
+                    Partager
+                </button>
+
+                <button type="submit" style="color: rgb(246, 142, 95); background-color: white; font-size: larger;" class="zonePartage">
+                    Nouvelle partie
+                </button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>@Copyrights : MimiK</p>
+    </footer>
+    
+     <!-- Popup de partage -->
+     <div class="popupBackground">
+        <div class="popup">
+            <div>Partagez votre score</div>
+            <form id="form">
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom">
+                <label for="email">Avec qui voulez-vous partager votre score ?</label>
+                <input type="email" id="email" name="email" placeholder="nom@domaine.com">
+                <button type="submit" id="btnEnvoyerMail">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

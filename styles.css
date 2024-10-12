@@ -1,0 +1,151 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    color: white;
+    
+    font-size: larger;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body {
+    --color-primary: #f76c5e;
+    --color-secondary: #f68e5f;
+    --color-tertiary: #ffeee6;    
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.gameBox, footer{
+    background-color: rgb(246, 142, 95);
+}
+
+header{
+    color: rgb(246, 142, 95);
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.gameBox{
+    width: 400px;
+
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+form{
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    bottom: 0;
+    height: 70px;
+    margin-top: 50px;
+}
+
+.grid1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-rows: 60px 30px;
+    gap: 10px;
+}
+.gridA, .gridD{
+    grid-column: 1 / 3;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridB{
+    grid-column: 1 / 2;
+}
+.gridA, .gridB, .gridC, .zonePartage, .gridD{
+    border-radius: 10px;
+    border: none;
+}
+.zonePartage{
+    padding : 0px 20px 0px 20px;
+}
+
+button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-tertiary);
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: var(--color-tertiary);
+    border: 3px solid var(--color-primary);
+    padding: 2px;
+    
+}
+
+.popupBackground {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #f76c5e;
+    border-radius: 30px;
+    z-index: 1;
+}
+.active {
+    display: flex !important;
+}
+
+.popup p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.popup div {
+    font-size: 25px;
+    padding : 5px;
+    padding-bottom: 15px;
+}
+
+/* Eléments de formulaire */
+.popup input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.popup button {
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.popup form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
