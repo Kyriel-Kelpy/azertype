@@ -149,3 +149,20 @@ button:focus {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Ajuste la taille de la police */
+    }
+    .zoneChoixNiveau, .zoneChoixRadio {
+        flex-direction: column; /* Aligne les éléments verticalement */
+    }
+    #zoneSaisie, #boutonValidation {
+        width: 100%; /* Rend les boutons et champs de saisie plus larges */
+        padding: 10px; /* Augmente le rembourrage */
+        font-size: 18px; /* Agrandit le texte pour une meilleure lisibilité */
+    }
+    .popupBackground {
+        padding: 20px; /* Ajuste le rembourrage de la popup */
+    }
+}
